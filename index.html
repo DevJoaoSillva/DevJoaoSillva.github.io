@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--FIM GOOGLE FONTS-->
+    <!--BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- FIM BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="css/style.css" class="css">
+    <script src="menu.js" defer></script>
+    <link rel="shortcut icon" href="images/ico.png" type="image/x-icon">
+    <title>JPSilva Developer</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#"><img src="images/LogoJPSilva.png" alt="Logo do Portfólio" height="80px" width="200px"></a>
+            </div> 
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#my-skills">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="btn-contato">
+                <a href="https://api.whatsapp.com/send?phone=5535998879620&text=Olá, estou entrando em contato pelo seu site!" target="_blank">
+                    <button>Contato</button>
+                </a>
+                
+            </div>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-three-dots-vertical"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Habilidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=5535998879620&text=Olá, estou entrando em contato pelo seu site!" target="_blank">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="topo-do-site" id="inicio">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>JOÃO PAULO SILVA<span>.</span></h1>
+                        <p>Software Developer</p>
+                        <div class="btn-contato">
+                            <a href="https://api.whatsapp.com/send?phone=5535998879620&text=Olá, estou entrando em contato pelo seu site!" target="_blank"><button>Entre em Contato</button></a>
+                        </div>
+                    </div>
+                    <div class="img-topo-site">
+                        <img src="images/foto_pessoal.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+             <!-- INÍCIO DA SECTION Portfolio-->
+             <section id="skills" class="my-skills">
+                <div class="title-skills">
+                    <h2 class="titulo" id="my-skills">MEUS <span>PROJETOS.</span></h2>
+                </div>
+                <div class="list">
+                    <div class="item active">
+                        <div class="language-img">
+                            <img src="images/BoxBalancer _Foto.JPG" alt="imagem-linguagem">
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo-linguagem" >
+                                BoxBalancer
+                            </h2>
+                            <p class="description">O BoxBalancer é um sistema de controle de caixa diário projetado para gerenciar movimentações de 
+                                dinheiro em todas as formas de pagamento. Desenvolvido com C#, .NET e SQL Server, o sistema facilita o controle das 
+                                entradas e saídas de valores, enquanto a interface visual, criada com Windows Forms, oferece uma experiência prática e 
+                                intuitiva para a gestão financeira diária.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="item">
+                        <div class="language-img">
+                            <img src="images/SistemaRelatorioExames.JPG" alt="imagem-linguagem">
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo-linguagem" >
+                                ExamList
+                            </h2>
+                            <p class="description"> Desenvolvido com HTML, CSS e MySQL, este sistema permite o registro e a visualização de resultados de exames médicos. Após inserir os dados, o sistema gera um relatório completo com todos os resultados, oferecendo uma visão clara e organizada das informações.</p>
+                        </div>
+                    </div>
+    
+                    <div class="item">
+                        <div class="language-img">
+                            <img src="images/botWpp.png" alt="imagem-linguagem">
+                        </div>
+                        <div class="content">
+                            <h2 class="titulo-linguagem">
+                                Bot Whatsapp
+                            </h2>
+                            <p class="description">Desenvolvi um bot para automação de mensagens via WhatsApp utilizando Python, Selenium e WebBrowser.
+                                 O projeto foi criado para automatizar o processo de cobrança de IPTV, permitindo o envio eficiente e em massa de notificações
+                                  e lembretes de pagamento. A solução visa otimizar o processo de cobrança, reduzindo o tempo gasto em tarefas manuais e melhorando a eficiência na comunicação com os clientes.</p>
+    
+                            <button class="saiba-mais">
+                                Saiba mais
+                            </button>
+                        </div>
+                    </div>
+    
+                    <div class="arrows">
+                        <button id="prev"><img src="images/arrow.png" alt="seta esquerda"></button>
+                        <button id="next"><img src="images/arrow.png" alt="seta direita"></button>
+                    </div>
+    
+                    <div class="indicators">
+                        <div class="number">01</div>
+                        <ul>
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            
+                        </ul>
+                    </div>
+    
+            </section>
+            <!-- FIM DA SECTION portfolio-->
+
+            
+        <section class="habilidades" id="habilidades">
+            <div class="interface">
+                <h2 class="titulo">LINGUAGENS <span>E</span> TECNOLOGIAS<span>.</span></h2>
+                <div class="habilidades-container">
+                    <ul class="habilidades-list">
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML5" />
+                            
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS3" />
+                           
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                            <span class="nome-tecnologia">JavaScript</span>
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" alt="Bootstrap" />
+                            
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" />
+                            <span class="nome-tecnologia">CSharp</span>
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" alt="GitHub" />
+                        </li>
+                    </ul>
+                    <ul class="habilidades-list">
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" alt="PostgreSQL" />
+                           
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" alt="SQL Server" />
+                     
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" />
+                            
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" alt="Java" />
+                            
+                        </li>
+                        <li>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" alt="Selenium" />
+                            <span class="nome-tecnologia">Selenium</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/perfil.png" alt="Imagem">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER,<span>SOU JOÃO PAULO.</span></h2>
+                        <p>Desenvolvedor apaixonado por tecnologia, com foco em Back-End, sempre em busca de novos desafios e aprendizados. Meu objetivo é entregar soluções eficientes e de alta qualidade.</p>
+                        <p>Tenho experiência com diversas linguagens e ferramentas de desenvolvimento. Além de ser uma pessoa dedicada e focada, trabalho bem em equipe e sou entusiasta do aprendizado contínuo.</p>
+                        <div class="btn-social">
+                            <a href="https://www.instagram.com/jpaulo.sillva/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://api.whatsapp.com/send?phone=5535998879620&text=Olá, estou entrando em contato pelo seu site!" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="https://www.linkedin.com/in/devjoaopsilva21/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/DevJoaoSillva" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="formulario" id="contato">
+            <div class="interface">
+                <h2 class="titulo">ENTRE <span>EM</span> CONTATO <span>COMIGO.</span></h2>
+                <form action="">
+                    <input type="text" placeholder="Seu nome completo" required>
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <input type="text" placeholder="Seu celular">
+                    <textarea placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="images/LogoJPSilva.png" alt="" height="100px" width="190px">
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://www.instagram.com/jpaulo.sillva/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://api.whatsapp.com/send?phone=5535998879620&text=Olá, estou entrando em contato pelo seu site!" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href="https://www.linkedin.com/in/devjoaopsilva21/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://github.com/DevJoaoSillva" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="info-footer">
+                <p>Todos os direitos reservados. João Paulo Silva ©</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
