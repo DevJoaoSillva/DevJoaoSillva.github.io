@@ -8,6 +8,8 @@
 body{
     background-color: #000;
     height: 100vh;
+    width: 100%; /* Corrigido de 'wid' para 'width' */
+    overflow-x: hidden; /* Remove a rolagem horizontal */
 }
 .interface{
     max-width: 1280px;
